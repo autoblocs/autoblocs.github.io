@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Automatize a gestão dos sistemas de saúde pública no Brasil | Autoblocs Sistemas</title>
+
+  <!-- SEO -->
+
+  <meta name="description" content="Automatize a gestão dos sistemas de saúde da sua cidade melhorando os serviços prestados e minimizando os atrasos no recebimento de recursos federais e estaduais." />
+
+
+  <!-- FAVICONs -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#b26b09">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/jquery.floating-social-share.min.css" />
+  <!-- autoblocs custom css -->
+  <link rel="stylesheet" href="styles/autoblocs-min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-97697567-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body id="sectionHome">
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href=""><img src="images/autoblocs-marca.png" class="marcaHome" alt="marca Autoblocs"></a>
+        <span onclick="openNav()"><button type="button" class="navbar-toggle collapsed noBorderButton" id="#myNavbar" data-toggle="collapse" aria-expanded="false" aria-controls="navbar" >
+            <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </span>
+      </div>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#sectionHome" onclick="closeNav()">Home</a>
+          <a href="#sectionRequestDemo" onclick="closeNav()">Demonstra&ccedil;&atilde;o</a>
+          <a href="#sectionSubscribeList" onclick="closeNav()">Not&#237;cias</a>
+          <a href="#sectionMessage" onclick="closeNav()">Envie-nos sua mensagem</a>
+          <div class="contain-fluid text-center mobileMenuSocialIcons">
+            <div class="social-icons mobileRow">
+              <a class="mobileSocialLinks" title="Autoblocs Instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/autoblocs" onclick="closeNav()"><i class="fa faFooter fa-instagram faMobile"></i></a>
+              <a class="mobileSocialLinks" title="Autoblocs Facebook" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/autoblocs" onclick="closeNav()"><i class="fa faFooter fa-facebook faMobile"></i></a>
+              <a class="mobileSocialLinks" title="Autoblocs Twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/autoblocs" onclick="closeNav()"><i class="fa faFooter fa-twitter faMobile"></i></a>
+              <a class="mobileSocialLinks" title="Autoblocs LinkedIn" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/autoblocs" onclick="closeNav()"><i class="fa faFooter fa-linkedin faMobile"></i></a>
+              <a class="mobileSocialLinks" title="Autoblocs Google Plus" rel="noopener noreferrer" target="_blank" href="https://plus.google.com/u/0/b/111533231905857269248/111533231905857269248" onclick="closeNav()"><i class="fa faFooter fa-google faMobile"></i></a>
+              <a class="mobileSocialLinks" title="Autoblocs Email" rel="noopener noreferrer" target="_blank" href="#" onclick="closeNav()"><i class="fa faFooter fa-envelope faMobile"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="navbar-collapse collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-right navItems">
+          <li class=""><a href="#sectionRequestDemo">Demonstra&ccedil;&atilde;o</a></li>
+          <li class=""><a href="#sectionSubscribeList">Not&#237;cias</a></li>
+          <li class=""><a href="#sectionMessage">Envie-nos sua mensagem</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="contain-fluid wrapperTop">
+
+    <div class="sliderHero">
+
+      <div class="heroSlide-1 text-center">
+        <div id="myNavbar" class="text-center adjustStyle">
+          <h1 class="heroTitle">Gestão de Dados da<br>
+          Saúde Pública no Brasil</h1>
+
+          <p class="heroTextStyle">Automatize a gestão dos sistemas de saúde da sua cidade melhorando os serviços prestados e minimizando os atrasos no recebimento de recursos federais e estaduais.</p>
+
+          <a href="#features" class="btn btnOutline">Saiba Mais</a>
+        </div>
+      </div>
+      <!--   <div><img class="img-responsive" src="http://placehold.it/1200x540"></div>  -->
+
+    </div>
+  </div>
+
+  <div id="features" class="contain-fluid text-center featuresStyle">
+
+    <div class="row col-md-12 featureWrapperStyle">
+
+      <h2 class="mainHeader">Gestão de Informações de Saúde Pública no Brasil</h2>
+
+      <div class="col-sm-3">
+        <object><svg xmlns="http://www.w3.org/2000/svg" class="img-responsive feature-icons" viewBox="0 0 100 100"><path d="M23.6 10.1H8.7c-3.3 0-6 2.7-6 6v67.5c0 3.3 2.7 6 6 6h14.9c3.3 0 6-2.7 6-6V16.1C29.5 12.8 26.9 10.1 23.6 10.1zM16 80.6c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5C20.5 78.5 18.5 80.6 16 80.6zM25.9 63.1H6.4V25.7H26v37.4H25.9z"/><path d="M53.9 10.1H39c-3.3 0-6 2.7-6 6v67.5c0 3.3 2.7 6 6 6h14.9c3.3 0 6-2.7 6-6V16.1C59.8 12.8 57.1 10.1 53.9 10.1zM46.4 80.6c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5C50.9 78.5 48.9 80.6 46.4 80.6zM56.2 63.1H36.6V25.7h19.6C56.2 25.7 56.2 63.1 56.2 63.1z"/><path d="M98.2 81.3l-8.8-66.9C89 11.1 86 8.8 82.8 9.3L68 11.2c-3.3 0.4-5.6 3.4-5.1 6.7l8.8 66.9c0.4 3.3 3.4 5.6 6.7 5.1L93.2 88C96.4 87.5 98.7 84.5 98.2 81.3zM83.5 79.9c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5S86 79.9 83.5 79.9zM72.6 64l-4.9-37.1 19.4-2.5 4.9 37L72.6 64z"/></svg></object>
+        <h2 class="featureHeader">DADOS OFICIAIS PROVENIENTES DO DATASUS, IBGE, ETC</h2>
+        <p class="featureText">Automatização do download dos dados do TabNet/TabWin. Realize quantas tabulações você precisar e receba os resultados diretamente no seu computador.</p>
+        <a href="#sectionMessage" class="btn btn-default squareBTN">Saiba Mais</a>
+      </div>
+      <div class="col-sm-3">
+        <object><svg xmlns="http://www.w3.org/2000/svg" class="img-responsive feature-icons" viewBox="0 0 100 100"><path d="M76.9 17H59.3c-3.4 0-6.3 2.8-6.3 6.3v18.3c0 3.5 2.8 6.3 6.3 6.3h17.6c3.5 0 6.3-2.8 6.3-6.3V23.3C83.2 19.8 80.4 17 76.9 17zM76.4 34.6H59.9v-4.3h16.5V34.6z"/><path d="M40.7 17H23.1c-3.5 0-6.3 2.8-6.3 6.3v18.3c0 3.5 2.8 6.3 6.3 6.3h17.6c3.5 0 6.3-2.8 6.3-6.3V23.3C47 19.8 44.1 17 40.7 17zM42.2 33.6h-9.1v9.5h-2.6v-9.5h-9.1v-2.4h9.1v-9.4h2.6v9.4h9.1V33.6z"/><path d="M40.7 52.2H23.1c-3.5 0-6.3 2.8-6.3 6.3v18.3c0 3.5 2.8 6.3 6.3 6.3h17.6c3.5 0 6.3-2.8 6.3-6.3V58.4C47 55 44.1 52.2 40.7 52.2zM36.9 77.6L34 73.1c-0.8-1.2-1.4-2.3-2.1-3.5h-0.1c-0.7 1.2-1.4 2.3-2.1 3.5l-2.9 4.5h-4l7.1-10.2 -6.8-9.8h4l2.8 4.2c0.7 1.2 1.4 2.1 2 3.3h0.1c0.7-1.2 1.3-2.2 2-3.3l2.8-4.2h4L34 67.3l7 10.3C41 77.6 36.9 77.6 36.9 77.6z"/><path d="M76.9 52.2H59.3c-3.4 0-6.3 2.8-6.3 6.3v18.3c0 3.5 2.8 6.3 6.3 6.3h17.6c3.5 0 6.3-2.8 6.3-6.3V58.4C83.2 55 80.4 52.2 76.9 52.2zM67.8 58.2c1.6 0 2.9 1.3 2.9 2.9S69.4 64 67.8 64c-1.6 0-2.9-1.3-2.9-2.9S66.2 58.2 67.8 58.2zM67.8 77c-1.6 0-2.9-1.3-2.9-2.9 0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9C70.7 75.6 69.4 77 67.8 77zM76.9 69.2H59.3v-3.7h17.6C76.9 65.6 76.9 69.2 76.9 69.2z"/></svg></object>
+        <h2 class="featureHeader">VISÃO INTEGRADA DE TODOS OS SERVIÇOS DE SAÚDE DA SUA REGIÃO</h2>
+        <p class="featureText">Visualizações e relatórios desenhados para sua audiência. Utilize modelos pré-definidos para apresentações em reuniões e congressos.</p>
+        <a href="#sectionMessage" class="btn btn-default squareBTN">Saiba Mais</a>
+      </div>
+
+      <div class="col-sm-3">
+        <object><svg xmlns="http://www.w3.org/2000/svg" class="img-responsive feature-icon-analise" viewBox="0 0 24 24"><style type="text/css">
+          .st0{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        </style><circle class="st0" cx="3.5" cy="3.5" r="2.5"/><circle class="st0" cx="3.5" cy="11.5" r="2.5"/><circle class="st0" cx="3.5" cy="19.5" r="2.5"/><path class="st0 feature-icons" d="M10 2h13M10 5h7M10 10h13M10 13h9M10 18h13M10 21h4"/></svg></object>
+        <h2 class="featureHeader">ANÁLISE E MELHORIAS APLICADAS AO ATENDIMENTO DO SUS</h2>
+        <p class="featureText">Automatização da gestão dos serviços de saúde da sua cidade. Monitore a qualidade do atendimento à saúde em tempo real.</p>
+        <a href="#sectionMessage" class="btn btn-default squareBTN">Saiba Mais</a>
+      </div>
+      <div class="col-sm-3">
+        <object><svg xmlns="http://www.w3.org/2000/svg" class="img-responsive feature-icons" viewBox="0 0 100 100"><title>  Artboard 28</title><path d="M61.5 31.1c1 1 1 2.5 0 3.5 0 0 0 0 0 0l-6.3 6.2 -1.8 1.7c-1 1-2.5 1-3.5 0 0 0 0 0 0 0l-1.7-1.8 -1.6-1.6c-1-1-1-2.5 0-3.5 0 0 0 0 0 0l0 0c1-1 2.5-1 3.5 0 0 0 0 0 0 0l1.6 1.6 6.3-6.2C59 30.2 60.5 30.2 61.5 31.1 61.5 31.1 61.5 31.1 61.5 31.1zM80.6 63.5l5.7 19.8c0.6 2-0.6 4-2.5 4.6 0 0 0 0 0 0L45.5 98.9c-2 0.6-4-0.6-4.6-2.5 0 0 0 0 0 0l-3-10.4H23.6c-3.7 0-6.6-3-6.6-6.7l0 0V65.2l-5.7-1.9c-1.7-0.6-2.6-2.4-2-4.1 0-0.1 0.1-0.1 0.1-0.2l6.1-13.7c1-2.3 1.6-4.8 1.5-7.3C16.9 17.6 33.4 0.9 53.9 0.9S90.9 17.3 91 37.7C91 47.3 87.3 56.6 80.6 63.5zM73.6 27c0-3.5-2.9-6.4-6.4-6.4H40.9c-3.5 0-6.4 2.9-6.4 6.4v19.8c0 3.5 2.9 6.4 6.4 6.4H49v4.1c0 1.4 1.1 2.5 2.5 2.5 0.7 0 1.3-0.3 1.8-0.7l5.9-5.9h8.1c3.5 0 6.4-2.9 6.4-6.4L73.6 27z"/></svg></object>
+        <h2 class="featureHeader">CONSULTORIA EM GOVERNANÇA DE SISTEMAS DE SAÚDE</h2>
+        <p class="featureText">Otimização do uso dos recursos para saúde na sua cidade. Implemente ferramentas avançadas de análise estatística e gestão.</p>
+        <a href="#sectionMessage" class="btn btn-default squareBTN">Saiba Mais</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="sectionSubscribeList" class="contain-fluid text-center mailListSection">
+
+    <div class="row col-md-12 cadastreWrapper">
+
+      <h2 class="mailListHeader">RECEBA NOSSAS NOTÍCIAS</h2>
+
+      <form id="mc-embedded-subscribe-form-list" class="mbr-form" action="https://autoblocs.us15.list-manage.com/subscribe/post?u=c6199c0241a5ba57af79837d5&amp;id=e9bbc4accc" method="post" data-form-title="CADASTRE-SE PARA RECEBER MAIS INFORMAÇÕES" name="mc-embedded-subscribe-form-list"
+        class="validate" target="_blank" novalidate>
+        <div class="input-group">
+          <input id="mce-EMAIL-list" type="text" class="form-control squared" name="EMAIL" placeholder="Inserir o seu e-mail" data-form-field="Email">
+          <div class="input-group-btn">
+            <div id="mce-responses-list">
+              <div class="response" id="mce-error-response-list" style="display:none"></div>
+              <div class="response" id="mce-success-response-list" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_c6199c0241a5ba57af79837d5_e9bbc4accc" tabindex="-1" value="">
+            </div>
+            <button id="mc-embedded-subscribe-list" class="btn btn-default squared" value="Subscribe" name="subscribe" type="submit">CADASTRO</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <div id="sectionMessage" class="contain-fluid text-center contactFormSection">
+
+    <div class="row col-md-12 formularioWrapper">
+
+      <h2 class="contactFormHeader">ENVIE SUA MENSAGEM</h2>
+
+      <form id="mc-embedded-subscribe-form-message" action="https://autoblocs.us15.list-manage.com/subscribe/post?u=c6199c0241a5ba57af79837d5&amp;id=c7383d74eb" method="post" data-form-title="ENVIE SUA MENSAGEM" name="mc-embedded-subscribe-form-message" class="validate"
+        target="_blank" novalidate>
+
+        <div class="form-group">
+          <input id="mce-FULLNAME-message" type="text" class="form-control squared" name="FULLNAME" required="" placeholder="Nome Completo*" data-form-field="Name">
+        </div>
+        <div class="form-group">
+          <input id="mce-EMAIL-message" type="email" class="form-control squared" name="EMAIL" required="" placeholder="Email*" data-form-field="Email">
+        </div>
+        <div class="form-group">
+          <input id="mce-PHONE-message" type="tel" class="form-control squared" name="PHONE" placeholder="Telefone*" data-form-field="Phone">
+        </div>
+        <div class="form-group">
+          <textarea id="mce-MESSAGE-message" class="form-control squared" name="MESSAGE" rows="7" placeholder="Mensagem*" data-form-field="Message"></textarea>
+        </div>
+        <div id="mce-responses-message">
+          <div class="response" id="mce-error-response-message" style="display:none"></div>
+          <div class="response" id="mce-success-response-message" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c6199c0241a5ba57af79837d5_c7383d74eb" tabindex="-1" value=""></div>
+        <div class="pull-right">
+          <button id="mc-embedded-subscribe-message" type="submit" class="btn btn-md btn-default squared" name="subscribe" value="Subscribe">CONTATE-NOS</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="sectionRequestDemo" class="contain-fluid text-center" style="padding: 45px 0 45px 0;  background-color: #eee;">
+
+    <div class="row col-md-12" style="max-width: 800px; margin: 50px auto 0 auto; float: none !important;">
+
+      <h2 class="contactFormHeader">AGENDE UMA DEMONSTRAÇÃO</h2>
+
+      <form id="mc-embedded-subscribe-form-DEMO" action="https://autoblocs.us15.list-manage.com/subscribe/post?u=c6199c0241a5ba57af79837d5&amp;id=e0f3d4f78e" method="post" data-form-title="AGENDE UMA DEMONSTRAÇÃO" name="mc-embedded-subscribe-form-message" class="validate"
+        target="_blank" novalidate>
+        <div class="form-group">
+          <input id="mce-FNAME-demo" type="text" class="form-control squared" name="FNAME" required="" placeholder="Nome*" data-form-field="Name">
+        </div>
+        <div class="form-group">
+          <input id="mce-LNAME-demo" type="text" class="form-control squared" name="LNAME" required="" placeholder="Sobrenome*" data-form-field="SurName">
+        </div>
+        <div class="form-group">
+          <input id="mce-EMAIL-demo" type="text" class="form-control squared" name="EMAIL" required="" placeholder="Email*" data-form-field="Email">
+        </div>
+        <div class="form-group">
+          <input id="mce-PHONE-demo" type="text" class="form-control squared" name="PHONE" required="" placeholder="Telefone*" data-form-field="Phone">
+        </div>
+        <div class="form-group">
+          <textarea id="mce-ADD_INFO-demo" class="form-control squared" name="ADD_INFO" rows="7" placeholder="Mensagem*" data-form-field="Message"></textarea>
+        </div>
+        <div id="mce--demo" class="clear">
+          <div class="response" id="mce-error-response-demo" style="display:none"></div>
+          <div class="response" id="mce-success-response-demo" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_c6199c0241a5ba57af79837d5_e0f3d4f78e" tabindex="-1" value="">
+        </div>
+        <div class="pull-right">
+          <button id="mc-embedded-subscribe-demo" type="submit" class="btn btn-md btn-default squared" name="subscribe" value="Subscribe">AGENDAR</button>
+        </div>
+      </form>
+
+
+    </div>
+
+  </div>
+
+  <div id="wpFooter" class="contain-fluid text-center footerSocialIcons" style="padding: 40px">
+    <div class="social-icons">
+      <a title="Autoblocs Instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/autoblocs"><i class="fa faFooter fa-instagram"></i></a>
+      <a title="Autoblocs Facebook" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/autoblocs"><i class="fa faFooter fa-facebook"></i></a>
+      <a title="Autoblocs Twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/autoblocs"><i class="fa faFooter fa-twitter"></i></a>
+      <a title="Autoblocs LinkedIn" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/autoblocs"><i class="fa faFooter fa-linkedin"></i></a>
+      <a title="Autoblocs Google Plus" rel="noopener noreferrer" target="_blank" href="https://plus.google.com/u/0/b/111533231905857269248/111533231905857269248"><i class="fa faFooter fa-google"></i></a>
+      <a title="Autoblocs Email" rel="noopener noreferrer" target="_blank" href="#"><i class="fa faFooter fa-envelope"></i></a>
+    </div>
+    <div class="row col-md-12">
+
+      <p class="copyright">Copyright (c) 2017 AutoBlocs Saúde. Todos Os Diretos Reservados.</p>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Latest compiled and minified JavaScript
+    <script src="scripts/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- initialization script -->
+  <script type="text/javascript" src="scripts/slideinit.js"></script>
+
+  <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+  <script type="text/javascript" src="scripts/jquery.floating-social-share.min.js"></script>
+
+  <script type="text/javascript">
+    $("body").floatingSocialShare({
+      buttons: ["facebook", "twitter", "google-plus", "linkedin", "envelope"],
+      counter: false,
+      twitter_counter: false,
+      text: "compartilhar :"
+    });
+  </script>
+
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+
+    $(document).on('click', '.navbar-collapse.in', function(e) {
+      if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('body').scrollspy({
+        target: ".navbar-fixed-top",
+        offset: 165
+      });
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    function getUrlVars()
+    {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+        for(var i = 0; i < hashes.length; i++)
+            {
+             hash = hashes[i].split('=');
+             vars.push(hash[0]);
+             vars[hash[0]] = decodeURIComponent(hash[1]);
+             }
+
+         return vars;
+    }
+
+    window.onload = function execParm() {
+
+      var res = getUrlVars();
+
+      if(res['mce-EMAIL-list'] !== undefined){
+        document.getElementById('mce-EMAIL-list').value = res['mce-EMAIL-list'];
+        window.location.hash = 'sectionSubscribeList';
+      }
+
+      if(res['mce-EMAIL-message'] !== undefined){
+        document.getElementById('mce-EMAIL-message').value = res['mce-EMAIL-message'];
+        document.getElementById('mce-FULLNAME-message').value = res['mce-FULLNAME-message'];
+        document.getElementById('mce-PHONE-message').value = res['mce-PHONE-message'];
+        if(res['mce-MESSAGE-message'] !== undefined){
+          document.getElementById('mce-MESSAGE-message').value = res['mce-MESSAGE-message'];
+        }
+        window.location.hash = 'sectionMessage';
+      }
+
+      if(res['mce-EMAIL-demo'] !== undefined){
+        document.getElementById('mce-EMAIL-demo').value = res['mce-EMAIL-demo'];
+        document.getElementById('mce-FNAME-demo').value = res['mce-FNAME-demo'];
+        document.getElementById('mce-LNAME-demo').value = res['mce-LNAME-demo'];
+        document.getElementById('mce-PHONE-demo').value = res['mce-PHONE-demo'];
+        if(res['mce-MESSAGE-message'] !== undefined){
+          document.getElementById('mce-ADD_INFO-demo').value = res['mce-ADD_INFO-demo'];
+        }
+        window.location.hash = 'sectionRequestDemo';
+      }
+
+    }
+  </script>
+
+</body>
+
+</html>

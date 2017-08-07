@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.sliderHero').slick({dots:!0,infinite:!0,autoplay:!0,autoplaySpeed:5500,speed:1000,cssEase:'cubic-bezier(.51,.01,.52,.99)',arrows:!0,responsive:[{breakpoint:1024,settings:{infinite:!0,arrows:!0,dots:!0}},{breakpoint:600,settings:{infinite:!0,arrows:!1,dots:!0}},{breakpoint:480,settings:{arrows:!1,dots:!1,}}]})})
