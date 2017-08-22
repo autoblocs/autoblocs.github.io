@@ -362,46 +362,45 @@
   </script>
 
   <script type="text/javascript">
-    function getUrlVars()
-    {
-        var vars = [], hash;
-        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    function getUrlVars() {
+      var vars = [],
+        hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 
-        for(var i = 0; i < hashes.length; i++)
-            {
-             hash = hashes[i].split('=');
-             vars.push(hash[0]);
-             vars[hash[0]] = decodeURIComponent(hash[1]);
-             }
+      for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = decodeURIComponent(hash[1]);
+      }
 
-         return vars;
+      return vars;
     }
 
     window.onload = function execParm() {
 
       var res = getUrlVars();
 
-      if(res['mce-EMAIL-list'] !== undefined){
+      if (res['mce-EMAIL-list'] !== undefined) {
         document.getElementById('mce-EMAIL-list').value = res['mce-EMAIL-list'];
         window.location.hash = 'sectionSubscribeList';
       }
 
-      if(res['mce-EMAIL-message'] !== undefined){
+      if (res['mce-EMAIL-message'] !== undefined) {
         document.getElementById('mce-EMAIL-message').value = res['mce-EMAIL-message'];
         document.getElementById('mce-FULLNAME-message').value = res['mce-FULLNAME-message'];
         document.getElementById('mce-PHONE-message').value = res['mce-PHONE-message'];
-        if(res['mce-MESSAGE-message'] !== undefined){
+        if (res['mce-MESSAGE-message'] !== undefined) {
           document.getElementById('mce-MESSAGE-message').value = res['mce-MESSAGE-message'];
         }
         window.location.hash = 'sectionMessage';
       }
 
-      if(res['mce-EMAIL-demo'] !== undefined){
+      if (res['mce-EMAIL-demo'] !== undefined) {
         document.getElementById('mce-EMAIL-demo').value = res['mce-EMAIL-demo'];
         document.getElementById('mce-FNAME-demo').value = res['mce-FNAME-demo'];
         document.getElementById('mce-LNAME-demo').value = res['mce-LNAME-demo'];
         document.getElementById('mce-PHONE-demo').value = res['mce-PHONE-demo'];
-        if(res['mce-MESSAGE-message'] !== undefined){
+        if (res['mce-MESSAGE-message'] !== undefined) {
           document.getElementById('mce-ADD_INFO-demo').value = res['mce-ADD_INFO-demo'];
         }
         window.location.hash = 'sectionRequestDemo';
@@ -409,7 +408,31 @@
 
     }
   </script>
-
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "http://autoblocs.com",
+      "logo": "http://autoblocs.com/images/autoblocs-marca.png",
+      "sameAs": [
+        "http://www.facebook.com/autoblocs",
+        "http://instagram.com/autoblocs",
+        "https://twitter.com/autoblocs",
+        "https://www.linkedin.com/company/autoblocs",
+        "https://plus.google.com/111533231905857269248",
+        "https://www.youtube.com/channel/UC2zv9vMjBVVdnMaUxkUvE5w"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Autoblocs",
+      "alternateName": "Autoblocs Sistemas",
+      "url": "http://autoblocs.com"
+    }
+  </script>
 </body>
 
 </html>
